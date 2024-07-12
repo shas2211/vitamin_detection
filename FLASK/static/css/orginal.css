@@ -1,0 +1,97 @@
+
+
+
+
+
+.body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/page-background-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -2; /* Ensure it is behind the overlay and content */
+  background-attachment: fixed; /* Make the background image stay fixed while scrolling */
+}
+
+.body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the rgba value to control the darkness */
+  z-index: -1; /* Ensure it is between the image and content */
+}
+
+.body2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/image9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* Make the background image stay fixed while scrolling */
+  z-index: -2; /* Ensure it is behind the overlay and content */
+ 
+}
+
+.body2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Adjust the rgba value to control the darkness */
+  z-index: -1; /* Ensure it is between the image and content */
+}
+
+.body3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/contact-us-img1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -2; /* Ensure it is behind the overlay and content */
+}
+
+.body3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adjust the rgba value to control the darkness */
+  z-index: -1; /* Ensure it is between the image and content */
+}

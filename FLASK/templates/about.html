@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitamin Predictor-About Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/css/vitaminstyle.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body class="body2">
+    <nav class="navbar">
+      <a href="{{ url_for('home') }}" class="navbar-brand" style="text-decoration: none">
+        <p
+          class="mx-5"
+          style="
+            color: #fff;
+            font-weight: bolder;
+            font-size: xx-large;
+            padding-top: 10px;
+          "
+        >
+          VITAMIN DETECTION
+        </p>
+      </a>
+
+      <div class="navbar nav">
+        <a href="{{ url_for('home') }}" class="nav-link">Home</a>
+        <a href="{{ url_for('about') }}" class="nav-link">About Us</a>
+        <a href="{{ url_for('contact') }}" class="nav-link">Contact</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-6" style="padding-left: 70px; padding-top: 130px">
+          <img src="../static/images/about-img1.jpg" alt="" style="max-width: 500px" />
+        </div>
+        <div
+          class="col-6"
+          id="icon-paragraph"
+          style="padding-top: 60px; padding-left: 20px"
+        >
+          <div>
+            <img
+              src="../static/images/file.png"
+              alt=""
+              style="max-width: 50px; padding-top: 10px"
+            />
+            <h5 style="color: white; font-weight: bolder">Data Preparation</h5>
+            <p style="color: #fff; align-content: end; font-weight: 400">
+              The first step is to prepare the data for the Transfer Learning.
+              This involves obtaining and cleaning the data, splitting it into
+              training, validation, and testing sets, and performing any
+              necessary transformations or augmentations.
+            </p>
+            <br />
+          </div>
+          <div>
+            <img
+              src="../static/images/3d-cube (1).png"
+              alt=""
+              style="max-width: 50px; padding-top: 10px"
+            />
+            <h5 style="color: white; font-weight: bolder">Model Building</h5>
+            <p style="color: #fff; align-content: end; font-weight: 400">
+              The second step is to build the CNN model using the VGG19
+              architecture. This involves initializing the VGG16 model and
+              modifying it for the specific classification task, typically by
+              adding a few fully connected layers and an output layer. The model
+              is then compiled with an appropriate loss function, optimizer, and
+              evaluation metrics.
+            </p>
+          </div>
+          <br />
+          <div>
+            <img
+              src="../static/images/image.png"
+              alt=""
+              style="max-width: 50px; padding-top: 10px"
+            />
+            <h5 style="color: white; font-weight: bolder">
+              Model Training & Evaluation
+            </h5>
+            <p style="color: #fff; align-content: end; font-weight: 400">
+              The third step is to train the model on the training data using
+              the fit() method. During training, the model is presented with
+              batches of training data, and the weights are updated to minimize
+              the loss function.
+            </p>
+          </div>
+          <br />
+          <div>
+            <img
+              src="../static/images/security.png"
+              alt=""
+              style="max-width: 50px; padding-top: 10px"
+            />
+            <h5 style="color: white; font-weight: bolder">Model Deployment</h5>
+            <p style="color: #fff; align-content: end; font-weight: 400">
+              The final step after Model Training & Deployment involves
+              deploying the model so that it can be used in
+              real-world applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
